@@ -1,0 +1,111 @@
+/*
+Theme Name: Adapt 
+Description: A child theme of Kadence for custom styles.
+Author:      John Bolos
+Template:    kadence
+Version:     1.0.0
+Text Domain: kadence-child
+*/
+
+
+@font-face {
+  font-family: 'Helvetica Neue Custom';
+  src: url('./HelveticaNeue.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, *{
+  font-family: 'Helvetica Neue Custom', sans-serif !important;
+}
+
+
+:root{
+    /* SPACING */
+    --adapt-section-space: 144px;
+
+    /* COLORS */
+    --adapt-black: #000;
+    --adapt-red: #e7534f;
+    --adapt-white: #fff;
+    --adapt-white-darkmode: #eaeaea;
+    --adapt-secondary-black: #121212;
+    --adapt-secondary-black-three: #222;
+    --adapt-secondary-light-grey: #f8f8f8;
+    --adapt-secondary-medium-light-grey: #e4e4e4;
+    --adapt-secondary-medium-grey: #9a9a9a;
+    --adapt-secondary-dark-grey: #5f5f5f;
+    --adapt-secondary-pink: #fdf1f1;
+    --adapt-secondary-placeholders: #bdbdbd;
+
+    /* FONT SIZES */
+    --adapt-header-xlarge: 56px;
+    --adapt-header-large: 48px;
+    --adapt-header-medium: 32px;
+    --adapt-header-small: 28px;
+    --adapt-header-xsmall: 24px;
+    --adapt-label-xxxlarge: 28px;
+    --adapt-label-xxlarge: 24px;
+    --adapt-label-xlarge: 20px;
+    --adapt-label-large: 18px;
+    --adapt-label-medium: 16px;
+    --adapt-label-small: 14px;
+    --adapt-label-xsmall: 12px;
+    --adapt-paragraph-large: 20px;
+    --adapt-paragraph-medium: 18px;
+    --adapt-paragraph-small: 16px;
+    --adapt-paragraph-xsmall: 14px;
+}
+
+
+h2, .h1{
+	font-size: var(--adapt-header-large);
+}
+
+.btn{
+    padding: 20px 32px;
+    border-radius: 4px;
+    line-height: 1;
+	font-size: var(--adapt-label-large);
+	font-weight: 500;
+}
+
+.btn-primary {
+    --bs-btn-color: var(--adapt-white);
+    --bs-btn-bg: var(--adapt-red);
+    --bs-btn-border-color: var(--adapt-red);
+    --bs-btn-hover-color: var(--adapt-red);
+    --bs-btn-hover-bg: var(--adapt-white);
+    --bs-btn-hover-border-color: var(--adapt-white);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--adapt-white);
+    --bs-btn-active-bg: var(--adapt-red);
+    --bs-btn-active-border-color: var(--adapt-red);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--adapt-white);
+    --bs-btn-disabled-bg: var(--adapt-red);
+    --bs-btn-disabled-border-color: var(--adapt-red);
+}
+
+
+.btn-outline-primary {
+    --bs-btn-color: var(--adapt-red);
+    --bs-btn-border-color: var(--adapt-red);
+    --bs-btn-hover-color: var(--adapt-white);
+    --bs-btn-hover-bg: var(--adapt-red);
+    --bs-btn-hover-border-color: var(--adapt-red);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: var(--adapt-white);
+    --bs-btn-active-bg: var(--adapt-red);
+    --bs-btn-active-border-color: var(--adapt-red);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--adapt-red);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--adapt-red);
+    --bs-gradient: none;
+}
+
+
+.heading span{
+    color: var(--adapt-red);
+}
